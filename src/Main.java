@@ -5,8 +5,12 @@ public class Main {
         Author author1 = new Author ("Virginia ", "Wolf");
         Book book1 = new Book ("White Fang ", "Virginia Woolf ", 1906);
         book1.setPublishingDate(1908);
-        System.out.println(book.getBookName() + author.getName() + author.getSurname() + " " + book.getPublishingDate());
-        System.out.println(book1.getPublishingDate());
-        System.out.println(book1.getBookName() + author1.getName() + author1.getSurname() + " " + book1.getPublishingDate());
+        System.out.println(book1.toString());
+        System.out.println(book.toString());
+        System.out.println(author.toString());
+        System.out.println(author1.toString().equals(author.toString()));
+        System.out.println(book1.toString().equals(book.toString()));
+        System.out.println(book.hashCode());
+        System.out.println(author1.hashCode());
     }
 }
